@@ -48,6 +48,7 @@ namespace Hangfire.Console.Storage
             }
         }
 
+        [Obsolete]
         public void AddLine(ConsoleId consoleId, ConsoleLine line)
         {
             if (consoleId == null)
@@ -144,6 +145,7 @@ namespace Hangfire.Console.Storage
             return result;
         }
 
+        [Obsolete]
         public IEnumerable<ConsoleLine> GetLines(ConsoleId consoleId, int start, int end)
         {
             if (consoleId == null)
